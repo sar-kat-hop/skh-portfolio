@@ -1,49 +1,98 @@
 :root {
-
+    --Poppins: 'Poppins', 'Avenir', 'Open Sans', sans-serif;
+    --thin: 100;
+    --light: 200;
+    --med: 300;
+    --bold: 400;
+    --heavy: 500;
+    --teal: #31b0ff;
+    --coral: #ca8eb2;
+    --sapphire: #173c6f;
+    --pastel-blue: #8ac5ea;
+    --circle: ;
+    --border: 1px solid black;
+    /* --box: border-box; */
+    --squircle: 5px;
 }
 
 * {
-    font-family: ;
+    /* font-family: 'Poppins'; */
+    margin: 0;
+    /* background-color: var(--pastel-blue); */
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(191,218,255);
+    background: radial-gradient(circle, rgba(191,218,255,1) 0%, rgba(135,189,255,1) 50%, rgba(76,124,255,1) 100%);
 }
 
 .home-container {
-    
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    margin: 10% 10%;
+    padding: 10px;
 }
 
 #hello {
-
+    font-family: 'Fredericka the Great', cursive, serif;
+    color: var(--teal);
+    font-size: 100px;
+    width: 400px;
+    height: 175px;
+    text-align: center;
+    align-items: center;
+    margin: 50px 50px;
+    padding: 50px 15px;
 }
 
-#site-description {
-
-}
-
-summary {
-
+#site-descr {
+    font-family: var(--Poppins);
+    font-weight: var(--med);
+    font-size: 25px;
+    line-height: 1.25;
+    text-align: center;
+    align-items: center;
 }
 
 #accent-color-text {
-
+    color: white;
 }
 
-br {
-
+.nav {
+    margin: 5%;
+    padding: 20px;
+    font-family: var(--Poppins);
+    font-weight: var(--heavy);
+    font-size: 20px;
+    /* border: 5px solid var(--sapphire); */
+    /* background-color: var(--pastel-blue); */
 }
 
-#see-my-work-container {
-
-}
-
-#see-my-work-button {
-
+.nav a {
+    display: inline-block;
+    list-style-type: none;
+    margin: 12px; 
+    padding: 20px;
+    text-decoration: none;
+    color: var(--teal);
 }
 
 .about-me-container {
-
+    margin: 0 5%;
+    padding: 50px;
+    height: fit-content;
+    font-family: var(--Poppins);
+    font-size: 16px;
+    font-weight: var(--light);
 }
 
 .left-align-container {
-
+    margin: 5%;
 }
 
 #about-me-img {
@@ -59,7 +108,6 @@ br {
 }
 
 #about-me-text {
-
 }
 
 .right-align-heading {
