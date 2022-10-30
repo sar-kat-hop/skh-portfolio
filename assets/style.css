@@ -1,89 +1,94 @@
 :root {
     --Poppins: 'Poppins', 'Avenir', 'Open Sans', sans-serif;
-    --thin: 100;
-    --light: 200;
-    --med: 300;
-    --bold: 400;
-    --heavy: 500;
-    --teal: #31b0ff;
-    --coral: #ca8eb2;
+    --Cursive: 'Pacifico', cursive, serif;
+    --blue: #31cfff;
+    --rose: #ca8e95;
     --sapphire: #173c6f;
-    --pastel-blue: #8ac5ea;
-    --circle: ;
+    --lightblue: #8ac5ea;
     --border: 1px solid black;
-    /* --box: border-box; */
-    --squircle: 5px;
+    --center: center;
+    --in-block: inline-block;
 }
 
 * {
-    /* font-family: 'Poppins'; */
-    margin: 0;
-    /* background-color: var(--pastel-blue); */
-    box-sizing: border-box;
+    /* margin: 0; */
+    /* box-sizing: border-box; */
+}
+
+header {
+    font-family: var(--Poppins);
+    /* display: inline; */
+    margin: 0 auto;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(191,218,255,1) 0%, rgba(135,189,255,1) 50%, rgba(76,124,255,1) 100%); 
+}
+
+h1 {
+    font-family: var(--Cursive);
+    text-align: var(--center);
+    color: var(--sapphire);
+}
+
+nav {
+    margin: 20px;
+    align-items: var(--center);
+    display: flex;
+    justify-content: var(--center);
+}
+
+nav a {
+    font-size: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0 40px;
+    margin: 0 20px;
+}
+nav a:hover {
+    cursor:pointer;
 }
 
 body {
-    background: rgb(191,218,255);
-    background: radial-gradient(circle, rgba(191,218,255,1) 0%, rgba(135,189,255,1) 50%, rgba(76,124,255,1) 100%);
+    /* background: rgb(191,218,255);
+    background: radial-gradient(circle, rgba(191,218,255,1) 0%, rgba(135,189,255,1) 50%, rgba(76,124,255,1) 100%); */
+    font-weight: 200;
 }
 
 .home-container {
     display: flex;
     flex-direction:column;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    height: 95vh;
-    margin: 10% 10%;
-    padding: 10px;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 25px;
+    background-position: center;
+    background-size: cover;
 }
 
 #hello {
-    font-family: 'Fredericka the Great', cursive, serif;
-    color: var(--teal);
+    font-family: 'Oooh Baby', cursive, serif;
+    color: var(--rose);
     font-size: 100px;
-    width: 400px;
-    height: 175px;
-    text-align: center;
+    /* width: 400px;
+    height: 175px; */
     align-items: center;
-    margin: 50px 50px;
-    padding: 50px 15px;
+    /* margin: 50px 50px;
+    padding: 50px 15px; */
 }
 
 #site-descr {
     font-family: var(--Poppins);
-    font-weight: var(--med);
+    font-weight: 200;
     font-size: 25px;
     line-height: 1.25;
-    text-align: center;
-    align-items: center;
+    text-align: var(--center);
+    align-items: var(--center);
 }
 
-#accent-color-text {
-    color: white;
-}
-
-.nav {
-    margin: 5%;
-    padding: 20px;
-    font-family: var(--Poppins);
-    font-weight: var(--heavy);
-    font-size: 20px;
-    /* border: 5px solid var(--sapphire); */
-    /* background-color: var(--pastel-blue); */
-}
-
-.nav a {
-    display: inline-block;
-    list-style-type: none;
-    margin: 12px; 
-    padding: 20px;
-    text-decoration: none;
-    color: var(--teal);
-}
-
-.about-me-container {
-    margin: 0 5%;
+.content {
+    width: 70%;
+    display: var(--in-block);
     padding: 50px;
     height: fit-content;
     font-family: var(--Poppins);
@@ -91,29 +96,8 @@ body {
     font-weight: var(--light);
 }
 
-.left-align-container {
-    margin: 5%;
-}
-
-#about-me-img {
-
-}
-
-.left-circle {
-
-}
-
-.right-align-container {
-
-}
-
-#about-me-text {
-}
-
-.right-align-heading {
-
-}
-
-.right-align-text {
-    
+#photo {
+    border: 2px var(--sapphire) dotted;
+    border-radius: 0px;
+    /* I want my photo to be circular. */
 }
