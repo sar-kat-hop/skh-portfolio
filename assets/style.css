@@ -2,42 +2,38 @@
     --Poppins: 'Poppins', 'Avenir', 'Open Sans', sans-serif;
     --Cursive: 'Pacifico', cursive, serif;
     --blue: #31cfff;
-    --rose: #ca8e95;
-    --sapphire: #173c6f;
-    --lightblue: #8ac5ea;
+    --rose: #d8818bfa;
+    --sapphire: #1a3982;
+    --mint: #9dfcff;
     --border: 1px solid black;
     --center: center;
     --in-block: inline-block;
 }
 
-* {
-    /* margin: 0; */
-    /* box-sizing: border-box; */
-}
 
-header {
+.h1-main {
     font-family: var(--Poppins);
-    /* display: inline; */
     margin: 0 auto;
     padding: 20px;
-    background: radial-gradient(circle, rgba(191,218,255,1) 0%, rgba(135,189,255,1) 50%, rgba(76,124,255,1) 100%); 
+    /* background: radial-gradient(circle, rgba(191,218,255,1) 0%, rgba(135,189,255,1) 50%, rgba(76,124,255,1) 100%);  */
 }
 
 h1 {
     font-family: var(--Cursive);
-    text-align: var(--center);
+    font-size: 2.25em;
+    text-align: center;
     color: var(--sapphire);
 }
 
 nav {
     margin: 20px;
-    align-items: var(--center);
+    align-items: center;
     display: flex;
-    justify-content: var(--center);
+    justify-content: center;
 }
 
 nav a {
-    font-size: 20px;
+    font-size: 1.2em;
     list-style-type: none;
     text-decoration: none;
     color: whitesmoke;
@@ -46,7 +42,11 @@ nav a {
 }
 nav a:hover {
     cursor:pointer;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.484);
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.484);
+}
+
+.divider {
+    width: 60%;
 }
 
 h2 {
@@ -57,10 +57,9 @@ body {
     /* background: rgb(191,218,255);
     background: radial-gradient(circle, rgba(191,218,255,1) 0%, rgba(135,189,255,1) 50%, rgba(76,124,255,1) 100%); */
     font-weight: 200;
-}
-
-#accent {
-    color: var(--lightblue);
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/annie-spratt-X4l3CjcDvic-unsplash.jpg);
 }
 
 .home-container {
@@ -70,15 +69,12 @@ body {
     align-items: center;
     height:fit-content;
     margin-bottom: 25px;
-    background-position: center;
-    background-size: cover;
-    background-image: url();
 }
 
 #hello {
     font-family: 'Oooh Baby', cursive, serif;
     color: var(--rose);
-    font-size: 100px;
+    font-size: 6em;
     align-items: center;
     /* border: 1.10px gray solid; */
     /* box-shadow: 0px 5px 5px 1px var(--lightblue); */
@@ -86,23 +82,17 @@ body {
     padding-top: 10px;
 }
 
-/* #line {
-    transform: rotate(90deg);
-    position: relative;
-    left: 125px;
-} */
-
 #site-descr {
     font-family: var(--Poppins);
     font-weight: 200;
-    font-size: 25px;
+    font-size: 1.5em;
     line-height: 1.25;
     text-align: center;
     align-items: center;
 }
 
-#divider {
-    width: 60%;
+#accent {
+    color: var(--mint);
 }
 
 .content {
@@ -115,12 +105,61 @@ body {
 }
 .about {
     /* box-shadow: 10px 10px 10px gray; */
-
 }
 
 #photo {
     border: 2px var(--sapphire) dotted;
     border-radius: 50px;
+}
+
+.my-work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 100vh;
+    justify-content: center;
+    /* align-items: ; */
+    /* box-sizing: border-box; */
+}
+
+.img-title {
+    background: none;
+    border: 1px gray solid;
+}
+
+#centerpiece-img {
+    min-height: 400px;
+    min-width: 400px;
+    max-height: 500px;
+    max-width: 600px;
+}
+
+#img1 {
+    min-height: 200px;
+    min-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#img2 {
+    min-height: 200px;
+    min-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#img3 {
+    min-height: 200px;
+    min-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#img4 {
+    min-height: 200px;
+    min-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 @media screen and (max-width: 768px) {
