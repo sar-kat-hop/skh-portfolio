@@ -9,7 +9,7 @@
     --h-size: 2em;
 }
 
-.h1-main {
+header {
     font-family: var(--Poppins);
     padding: 20px;
     /* background: radial-gradient(circle, rgba(191,218,255,1) 0%, rgba(135,189,255,1) 50%, rgba(76,124,255,1) 100%);  */
@@ -37,6 +37,7 @@ nav a {
     padding: 0 40px;
     margin: 0 20px;
 }
+
 nav a:hover {
     cursor:pointer;
     text-shadow: 2px 1px rgba(0, 0, 0, 0.484);
@@ -53,7 +54,7 @@ body {
     background-image: url(./images/annie-spratt-X4l3CjcDvic-unsplash.jpg);
 }
 
-.home-container {
+.hello {
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -61,7 +62,7 @@ body {
     height:fit-content;
 }
 
-#hello {
+h2 {
     font-family: 'Oooh Baby', cursive, serif;
     color: var(--rose);
     font-size: 6em;
@@ -113,7 +114,7 @@ h3 {
     margin-bottom: 10%;
 }
 
-#my-work {
+h4 {
     font-family: var(--Cursive);
     font-size: 2em;
     color: var(--mint);
@@ -125,28 +126,28 @@ h3 {
     display: block;
 }
 
-.img-title {
-    display: block;
-    background: none;
-    /* border: 1px gray solid; */
-    font-size: 1.2em;
-    font-weight: 300;
-}
-
 #showcase-img {
     min-width: 300px;
     max-width: 400px;
 }
 
+.img-title {
+    /* display: block; */
+    /* background: none; */
+    /* border: 1px gray solid; */
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
 .card {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template rows: 1fr fr;
     grid-auto-flow: row dense;
-    gap: 5px;
+    gap: 5px; */
 }
 
-.project {
+.img {
     min-width: 200px;
     max-width: 300px;
     object-fit: contain;
