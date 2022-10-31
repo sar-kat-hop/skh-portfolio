@@ -11,6 +11,8 @@ N/A
 ## Link to Deployed Site
 You can visit the deployed website [here](url).
 
+Please note: because I don't currently have apps to link as per the assignment criteria, I used placeholder images that link to prior class-related repos on my GitHub page or my GitHub profile landing page. 
+
 ## Contributing
 The code for normalize.css can be found on [Nicolas Gallagher's GitHub](github.com/necolas/normalize.css).
 
