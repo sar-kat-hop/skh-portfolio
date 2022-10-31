@@ -3,7 +3,7 @@
 ## Purpose
 The goal of this assignment was to create a portfolio using the concepts learned over the last two weeks in css and html, including responsive design layout (using flex and media queries), accessibility, and "DRY" coding.
 
-The result seen here is a work-in-progress/rough draft that needs some more work but is close to functioning as desired, the main challenge being layout. 
+The result seen here is a work-in-progress/rough draft that needs some more work but is very close to functioning as desired, the main challenge being layout. 
 
 ## Install
 N/A
