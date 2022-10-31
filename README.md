@@ -9,12 +9,14 @@ The result seen here is a work-in-progress/rough draft that needs some more work
 N/A
 
 ## Link to Deployed Site
-You can visit the deployed website [here](url).
+You can visit the deployed website [here](https://sar-kat-hop.github.io/skh-portfolio/).
 
-Please note: because I don't currently have apps to link as per the assignment criteria, I used placeholder images that link to prior class-related repos on my GitHub page or my GitHub profile landing page. 
+Please note: because I don't currently have apps to link as per the assignment criteria, I used placeholder images that link to prior class-related repos on my GitHub page or my GitHub profile landing page. The placeholder images are royalty free stock images found online (see Contributing below.)
 
 ## Contributing
 The code for normalize.css can be found on [Nicolas Gallagher's GitHub](github.com/necolas/normalize.css).
+
+Royalty free images found on [Unsplash](https://unsplash.com/) and [Pixabay](https://pixabay.com/).
 
 ## License
 Please refer to the included license in this repo.
