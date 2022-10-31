@@ -11,7 +11,6 @@
 
 header {
     font-family: var(--Poppins);
-    padding: 20px;
     /* background: radial-gradient(circle, rgba(191,218,255,1) 0%, rgba(135,189,255,1) 50%, rgba(76,124,255,1) 100%);  */
 }
 
@@ -46,14 +45,14 @@ nav a {
     font-size: 1.2em;
     list-style-type: none;
     text-decoration: none;
-    color: var(--white);
+    color: var(--blue);
     padding: 0 40px;
     margin: 0 20px;
 }
 
 nav a:hover {
     cursor:pointer;
-    text-shadow: 2px 1px rgba(0, 0, 0, 0.484);
+    text-shadow: 1px 1px 1px rgba(103, 157, 188, 0.771);
 }
 
 /* nav a:visited {
@@ -68,9 +67,9 @@ body {
     font-weight: 200;
     background-position: center;
     background-size: cover;
-    background-image: url(./images/annie-spratt-X4l3CjcDvic-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-image: url(./images/resul-mentes-DbwYNr8RPbg-unsplash.jpg);
+    /* background-repeat: no-repeat; */
+    background-position: 75% 0;
 }
 
 .hello {
@@ -79,6 +78,7 @@ body {
     justify-content: center;
     align-items: center;
     height:fit-content;
+    margin: 0 auto;
 }
 
 h2 {
@@ -107,11 +107,11 @@ h2 {
 }
 
 #accent {
-    color: var(--mint);
+    color: var(--blue);
 }
 
 .content {
-    margin: 50px;
+    margin: 10px auto;
     font-family: var(--Poppins);
     font-size: 1em;
     font-weight: 200;
@@ -121,25 +121,32 @@ h3 {
     font-family: var(--Cursive);
     font-size: 2em;
     color: var(--mint);
-    margin-left: 20px;
+   /* margin-left: 20px; */
     padding-right: 40px;
+    text-align: center;
 }
 
-#photo {
-    border: 2px var(--sapphire) dotted;
-    border-radius: 50px;
+.photo {
+    border: 4px var(--sapphire) dotted;
+    border-radius: 180px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    animation: fadeIn 8s;
 }
 
 .about {
-    width: 80%;
+    max-width: 80vw;
     display: flex;
-    margin-left: 10%;
-    margin-bottom: 5%;
+    margin: 0 5vw;
+    padding-bottom: 20px;
+    text-align: justify;
 }
 
 .my-work {
     max-width: 90vw;
     max-height: 100vh;
+    margin: 0 5vw;
     /* display: flex;
     flex-direction: column;
     /* margin: 0 auto; */
@@ -176,6 +183,10 @@ h5 {
     max-width: 50vw;
 }
 
+#showcase-img:hover {
+    cursor: pointer;
+}
+
 .img-title {
     font-size: 1.2em;
     font-weight: 300;
@@ -185,18 +196,9 @@ h5 {
 }
 
 .card {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template rows: 1fr fr;
-    grid-auto-flow: row dense;
-    gap: 5px; */
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    flex: 75%;
-    align-items: center;
-    align-content: center;
-    margin: 0 auto;    
+   display: flex;
+   flex: 75%;
+   justify-content: center;
 }
 
 .card img {
@@ -205,35 +207,46 @@ h5 {
     object-fit: contain;
 }
 
-.contact-me {
-    display: flex;
+.card img:hover {
+    cursor:pointer;
+}
+
+
+.contact {
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    display: block;
     text-align: center;
     font-family: var(--Cursive);
     font-size: 2em;
     color: var(--mint);
-    margin-top: 50px;
 }
 
 .contact p {
     font-family: var(--Poppins);
     color: var(--white);
-    font-size: 1.1em;
+    font-size: 0.5em;
     font-weight: 300;
-    text-align: center;    
+    text-align: center; 
+    margin-top: 2vh;   
 }
 
-footer {
+/* footer {
     font-family: var(--Poppins);
     font-size: 1em;
     font-weight: 200;
     color: var(--white);
     text-align: center;
-    margin: 20px;
-}
+    margin-top: 20px;
+} */
 
 @media screen and (max-width: 768px) {
     * {
       flex-direction: column;
+      flex-wrap: wrap;
+      /* flex: 80%; */
+      justify-content: center;
+      align-items: center;
     }
+}
