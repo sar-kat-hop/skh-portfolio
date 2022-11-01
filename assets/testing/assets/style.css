@@ -1,8 +1,12 @@
 :root {
-    --sapphire: ;
-    --teal: ;
-    --blue: ;
-    --rose: ;
+    --Poppins: 'Poppins', 'Avenir', 'Open Sans', sans-serif;
+    --Cursive: 'Pacifico', cursive, serif;
+    --blue: #31cfff;
+    --rose: #d8818bfa;
+    --sapphire: #1a3982;
+    --mint: #9dfcff;
+    --white: whitesmoke;
+    --border: 1px solid black;
 }
 
 * {
@@ -10,14 +14,19 @@
 }
 
 body {
-    font-family: 'Avenir', sans-serif;
+    font-family: var(--Poppins);
+    font-weight: 200;
     margin: 0 10vw 5vw;
+    background-image: url(./images/resul-mentes-DbwYNr8RPbg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /* To display header title on top of nav bar links: */
 .main-header {
     display: block;
     text-align: center;
+    font-family: var(--Cursive);
 }
 
 h1 {
@@ -31,12 +40,18 @@ nav {
     justify-content: center;
     margin: 0;
     padding-bottom: 20px;
+    font-family: var(--Poppins);
 }
 
 nav a {
     text-decoration: none;
     font-size: 1.25rem;
     padding: 0 40px;
+}
+
+nav a:hover {
+    cursor:pointer;
+    text-shadow: 1px 1px 1px #679dbcc5;
 }
 
 main {
@@ -57,33 +72,48 @@ main {
     margin: 0 auto;
 }
 
-/* I don't know why h2 appears to be slightly off-center */
-/* .hello-header {
-    font-size: 2rem;
-} */
-
 h2 {
+    font-family: 'Oooh Baby', cursive, serif;
+    font-size: 6rem;
+    color: var(--rose);
     margin: 0 auto;
-    font-size: 4rem;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1};
 }
 
 #photo {
+    border: 4px var(--sapphire) dotted;
     border-radius: 180px;
-    border: dotted 1px black;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
     margin-top: 10vh;
+    animation: fadeIn 8s;
 }
 
 .hello p {
     font-size: 1.5rem;
     margin-bottom: 10vh;
+    animation: fadeIn 8s;
+}
+
+#accent {
+    color: var(--blue);
+    font-weight: 300;
 }
 
 .about-me {
     font-size: 1.25rem;
+    font-family: var(--Cursive);
 }
 
 .about-me p {
     font-size: 1rem;
+    font-family: var(--Poppins);
     padding-bottom: 10px;
 }
 
@@ -102,6 +132,7 @@ h2 {
 }
 
 .flex-header {
+    font-family: var(--Cursive);
     padding: 20px;
     color: black;
     font-size: 1.5rem;
