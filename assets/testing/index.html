@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>layout test</title>
+        <meta charset="-UTF"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+    </head>
+
+    <body>
+
+        <header class="main-header">
+            <h1>Header</h1>
+            <nav>
+                <p><a href="#about-me">about</a></p>
+                <p><a href="#flex">projects</a></p>
+                <p><a href="#contact-me">contact</a></p>
+            </nav>
+        </header>
+    <hr>
+        <main>
+            <!-- With aside -->
+            <!-- <aside>
+                <p>aside</p>
+                <p>projects</p>
+                <p>contact</p>
+            </aside> -->
+
+            <!-- intended to sit on top of of about me section and be the first thing visible until user scrolls down -->
+            <section class="hello">
+                <header class="hello-header">
+                    <img id="photo" src="" alt="photo of Sarah, website owner">
+                    <h2>hello</h2>
+                    <p>
+                        paragraph
+                    </p>
+                </header>
+            </section>
+    <hr>
+            <!-- About me section -->
+            <section class="about-me" id="about-me">
+                <h3>about me</h3>
+                <p>
+                    paragraph
+                </p>
+            </section>
+
+            <!-- My Work section -->
+            <section class="flex" id="flex">
+                <header class="flex-header">
+                    <h4>my work</h4>
+                </header>
+
+                <!-- This is to force the next item in the flex container to the next line. -->
+                <div class="break">
+                </div>
+
+                <section class="showcase">
+                    <header class="showcase-header">
+                        <p>showcase</p>
+                    </header>
+                </section>
+
+                <div class="break">
+                </div>
+
+                <section class="projects">
+                    <header class="card-header">
+                        <p>project</p>
+                    </header>
+                </section>
+
+                <section class="projects">
+                    <header class="card-header">
+                        <p>project</p>
+                    </header>
+                </section>
+
+                <div class="break">
+                </div>
+
+                <section class="projects">
+                    <header class="card-header">
+                        <p>project</p>
+                    </header>
+                </section>
+
+                <section class="projects">
+                    <header class="card-header">
+                        <p>project</p>
+                    </header>
+                </section>  
+            </section>  
+
+            <!-- Contact info section -->
+            <section class="contact-me" id="contact-me">
+                <header class="contact-header">
+                    <h5>contact me</h5>
+                </header>
+                <p>
+                    paragraph
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>footer</p>
+        </footer>
+
+    </body>
+</html>
