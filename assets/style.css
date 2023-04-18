@@ -35,6 +35,10 @@ h1 {
     margin: 10px auto;
 }
 
+#kat {
+    color: var(--rose);
+}
+
 /* To display nav links side-by-side and centered (flex): */
 nav {
     display: flex;
@@ -100,7 +104,7 @@ h2 {
 .hello p {
     font-size: 1.5rem;
     margin-bottom: 5vh;
-    animation: fadeIn 8s;
+    animation: fadeIn 3s;
 }
 
 #accent {
@@ -113,7 +117,7 @@ h2 {
     font-size: 1.75rem;
     color: var(--sapphire);
     margin: 2vh 5vw;
-    animation: fadeIn 12s;
+    animation: fadeIn 5s;
 }
 
 .about-me p {
@@ -138,6 +142,12 @@ h2 {
 .break {
     flex-basis: 100%;
     height: 0;
+}
+
+.break p {
+    margin-top: 0;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
 }
 
 h4 {
@@ -174,10 +184,11 @@ h4 {
 }
 
 #showcase-img {
-    max-width: 600px;
+    max-width: 400px;
     min-width: 300px;
-    max-height: 600px;
+    max-height: 400px;
     min-height: 300px;
+    border: var(--sapphire) 4px dotted; 
 }
 
 .projects {
@@ -185,10 +196,11 @@ h4 {
     /* background: aqua; */
     flex: 1 0;
     flex-basis: 50%;
-    min-width: 100px;
-    max-width: 300px;
+    min-width: 300px;
+    max-width: 400px;
     min-height: 200px;
-    max-height: 300px;
+    max-height: 500px;
+    margin-bottom: 2%;
 }
 
 .card-header {
@@ -199,15 +211,18 @@ h4 {
 }
 
 .project-img {
-    min-width: 100px;
-    max-width: 300px;
+    min-width: 300px;
+    max-width: 400px;
     min-height: 200px;
-    max-height: 300px;
+    max-height: 500px;
+    padding: 2%;
+    border: var(--sapphire) 3px solid;
 }
 
 .contact-me {
     /* margin: 20px 0; */
     margin: 0 auto;
+    /* padding-top: 0px; */
 }
 
 h5 {
@@ -222,6 +237,7 @@ h5 {
     color: white;
     text-align: center;
     margin: 0 auto;
+    text-shadow: 2px var(--sapphire);
 }
 
 footer {
@@ -230,6 +246,7 @@ footer {
     font-size: 0.85rem;
     color: var(--sapphire);
     margin: 20px;
+    padding-top: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -242,11 +259,11 @@ footer {
     }
 
     #showcase-img {
-        max-width: 400px;
+        max-width: 500px;
     }
 
     .project-img {
-        max-width: 200px;
+        max-width: 350px;
         justify-content: center;
         margin-left: 20vw;
     }
